@@ -10,7 +10,7 @@ img{
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    border: 6px solid; color: #436a4a; 
+    border: 2px solid; color: #436a4a; 
     
 }
 
@@ -131,16 +131,11 @@ button{
     font-family: 'Times New Roman', Times, serif;
     display: flex;
     max-width: 90%;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 30px;
     margin-top: 20px;
+    margin-left: 5%;
     text-align: left;
-    padding: 5px;
+    padding: 8px;
     background-color: #436a4a;
     color: white;
-}
-
-#random{
-    text-align: center;
 }

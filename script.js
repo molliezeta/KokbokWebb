@@ -62,3 +62,4 @@ generera3.addEventListener('click', function () {
     const slumpMiddag = Math.floor(Math.random() * middagstexter.length);
     generera3.textContent = middagstexter[slumpMiddag]
 })
+
