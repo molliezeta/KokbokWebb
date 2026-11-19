@@ -1,10 +1,10 @@
 
 //Bilder som länkar//
-const Frukost =document.getElementById('Frukost-bild')
+const Frukost =document.getElementById('Frukost-bild') /*hittar elementet utifrån id*/
 
 Frukost.addEventListener('click', function () {
     window.location.href = 'frukost.html'
-})
+}) /*när elementet klickas på, kommer man till relaterande sida*/
 
 const Lunch = document.getElementById('Lunch-bild')
 Lunch.addEventListener('click', function () {
@@ -17,19 +17,20 @@ Middag.addEventListener('click', function () {
 })
 
 //Frukostknapp//
-const knapp = document.getElementById('knapp');
+const knapp = document.getElementById('knapp'); /*hittar elementet efter id*/
 
 const texter = [
     'Pannkakssmet',
     'Frukostpaj med äpple',
     'Fransk omelett med ost',
     'Omelett med avokado'
-];
+]; /*anger vilka texter som ska växlas mellan när man trycker på knappen*/
 
 knapp.addEventListener('click', function () {
     const slumpIndex = Math.floor(Math.random() * texter.length);
     knapp.textContent = texter[slumpIndex];
-});
+});/*säger: när knappen klickas på, slumpas text fram utifrån listan(texter)*/
+/*math: javascript väljer slumpmässigt utifrån listan*/
 
 //Lunchknapp//
 const generera2 = document.getElementById('knapp2')

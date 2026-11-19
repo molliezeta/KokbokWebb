@@ -1,71 +1,63 @@
 html{
-    scrollbar-width: thin;
-    scroll-behavior: smooth;
+    scrollbar-width: thin; /*gör scrollbar tunnare*/
+    scroll-behavior: smooth; /*gör scroll "smidigare"*/
+    
 }
 img{
-    max-width: 90%;
+    max-width: 90%; /*talar om hur mycket av skärmen den får ta*/
     height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 2px solid; color: #436a4a; 
-    
+    display: block; /*bilden hamnar på egen rad och respekterar angivna mått*/
+    margin-left: auto;/*centrerar bild*/
+    margin-right: auto;/*centrerar bild*/
+    margin-top: 20px;/*skapar luft från det som är över bilden*/
+    margin-bottom: 20px;/*skapar luft från det som är under bilden*/
+    border: 2px solid; color: #436a4a; /*kant på bilder*/
+    /*gäller alla bilder*/
 }
 
 body{
-    background-color: rgb(255, 234, 206);
-    border-color: darkgreen;
-    margin: 0;
+    background-color: rgb(255, 234, 206); /*bakgrundsfärg*/
+    margin: 0; /*hemsidan sträcker sig ända ut i kanterna*/
 }
 
 
 header, footer{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(67, 106, 74);
+    display: flex; /*header och footer följer med i hur man förminskar/förstorar webbläsaren*/
+    justify-content: space-between; /*sätter space mellan text*/
+    background-color: rgb(67, 106, 74); /*bakgrundsfärg*/
 
-    padding-left: 50px;
+    padding-left: 50px; /*space till texten/storleken av blocket*/
     padding-right: 50px;
     padding-top: 25px;
     padding-bottom: 25px;
-    align-items: center;
-    margin: 0px;
+    margin: 0px; /*blocket går ända ut i kanterna*/
     
 }
 
 
 
-nav a:hover{
-    border-bottom: 3px solid var(--green); 
-}
-::selection{color: blue;}
-
-
-#Kokboken-hem {
-    font-size: 26px;
-    color: aliceblue;
-    text-decoration: none;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+#Kokboken-hem { /*styling av "KOKBOKEN" i hörnet av header/footer*/
+    font-size: 26px; /*storlek*/
+    color: rgb(255, 255, 255); /*färg*/
+    text-decoration: none; /*tar bort linje under länk*/
+    font-family: Arial, Helvetica, sans-serif; /*typsnitt*/
 
 }
 
-nav a{
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+nav a{ /*styling av länkar till höger i header/footer*/
+    font-size: 24px; /*storlek*/
+    font-family: Arial, Helvetica, sans-serif; /*typsnitt*/
+    color: rgb(255, 255, 255); /*färg*/
+    text-decoration: none; /*tar bort linje under länkar*/
 
 }
 
 .meny{
-    display: flex;
-    gap: 30px;
+    display: flex; 
+    gap: 30px; /*space mellan a-tags i header/footer*/
 }
 
-h1{
+h1{ /*styling av h1*/
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -74,7 +66,7 @@ h1{
     font-family: 'Times New Roman', Times, serif;
 }
 
-p{
+p{ /*styling av paragraph*/
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -84,8 +76,8 @@ p{
     font-family: 'Times New Roman', Times, serif
 }
 
-.text-box{
-    border: 2px solid #436a4a;
+.text-box{ /*styling av ramen som recepten ligger i*/
+    border: 2px solid #436a4a; /*skapar kant, storlek, färg*/
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -95,47 +87,55 @@ p{
 
 }
 
-h3{
+h3{ /*styling av h3*/
     max-width: 97%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0;
+    margin-bottom: 0; /*minskar avståndet till underliggande text*/
     font-family: 'Times New Roman', Times, serif
 }
 
 
-h2{
+h2{/*styling av h2*/
     max-width: 90%;
     color: #436a4a;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2px;
     text-decoration: none;
-    font-family: cursive;
+    font-family: cursive; /*kursivt typsnitt*/
 }
 
-h4{
+h4{/*styling av h4*/
     max-width: 97%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
     color: #702e2ec9
 }
-a{
-    text-decoration: none;
+a{/*styling av a-tags/länkar*/
+    text-decoration: none; /*tar bort streck under tags*/
     color: rgb(67, 106, 74)
 }
 
-button{
-    font-size: 24px;
-    font-family: 'Times New Roman', Times, serif;
+button{/*knappar som genererar recept*/
+    font-size: 24px; /*storlek på texten*/
+    font-family: 'Times New Roman', Times, serif; /*typsnitt*/
     display: flex;
     max-width: 90%;
     margin-bottom: 30px;
     margin-top: 20px;
     margin-left: 5%;
-    text-align: left;
-    padding: 8px;
-    background-color: #436a4a;
-    color: white;
+    padding: 8px; /*skapar luft inuti blocken text till kant*/
+    background-color: #436a4a; /*bakgrundsfärg*/
+    color: white; /*text-färg*/
+}
+
+#random{/*ändring av andra rubriken på förstasidan*/
+     max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6px;
+    color: #436a4a;
+    font-family: 'Times New Roman', Times, serif;
 }
