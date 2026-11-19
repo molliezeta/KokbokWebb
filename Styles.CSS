@@ -10,6 +10,7 @@ img{
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    border: 6px solid; color: #436a4a; 
     
 }
 
@@ -30,6 +31,7 @@ header, footer{
     padding-top: 25px;
     padding-bottom: 25px;
     align-items: center;
+    margin: 0px;
     
 }
 
@@ -68,7 +70,7 @@ h1{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 6px;
-    color: rgb(67, 106, 74);
+    color: #436a4a;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -117,9 +119,29 @@ h4{
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    color: rgba(112, 46, 46, 0.789)
+    color: #702e2ec9
 }
 a{
     text-decoration: none;
     color: rgb(67, 106, 74)
+}
+
+button{
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    max-width: 90%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: left;
+    padding: 5px;
+    background-color: #436a4a;
+    color: white;
+}
+
+#random{
+    text-align: center;
+    text-decoration: underline;
 }

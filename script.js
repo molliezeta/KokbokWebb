@@ -1,13 +1,5 @@
-//logging to console//
-console.log("Hejhej");
 
-let icon = document.getElementById("logo")
-console.log(icon);
-
-//1. "let" with reference to HTML id
-//2. "addEventlistener" with "click" event
-//3. change some CSS proportion of that 
-
+//Bilder som länkar//
 const Frukost =document.getElementById('Frukost-bild')
 
 Frukost.addEventListener('click', function () {
@@ -22,4 +14,51 @@ Lunch.addEventListener('click', function () {
 const Middag = document.getElementById('Middag-bild')
 Middag.addEventListener('click', function () {
     window.location.href = 'middag.html'
+})
+
+//Frukostknapp//
+const knapp = document.getElementById('knapp');
+
+const texter = [
+    'Pannkakssmet',
+    'Frukostpaj med äpple',
+    'Fransk omelett med ost',
+    'Omelett med avokado'
+];
+
+knapp.addEventListener('click', function () {
+    const slumpIndex = Math.floor(Math.random() * texter.length);
+    knapp.textContent = texter[slumpIndex];
+});
+
+//Lunchknapp//
+const generera2 = document.getElementById('knapp2')
+
+const lunchtexter = [
+    'Laxpasta med lime',
+    'Korv Stroganoff',
+    'Enkel tomatsoppa med grädde',
+    'Svamppasta',
+    'Couscoussallad med vegobullar och picklad rödlök'
+];
+
+generera2.addEventListener('click', function () {
+    const slumpLunch = Math.floor(Math.random() * lunchtexter.length);
+    generera2.textContent = lunchtexter[slumpLunch]    
+})
+
+//Middagsknapp//
+const generera3 = document.getElementById('knapp3')
+
+const middagstexter = [
+    'Bouillabaisse',
+    'Marry me chicken',
+    'Harissakyckling med saffransris',
+    'Kyckling med röd curry',
+    'Asiatisk röd curry med räkor'
+];
+
+generera3.addEventListener('click', function () {
+    const slumpMiddag = Math.floor(Math.random() * middagstexter.length);
+    generera3.textContent = middagstexter[slumpMiddag]
 })
