@@ -11,7 +11,7 @@ img{
     margin-right: auto;/*centrerar bild*/
     margin-top: 20px;/*skapar luft från det som är över bilden*/
     margin-bottom: 20px;/*skapar luft från det som är under bilden*/
-    border: 2px solid; color: #436a4a; /*kant på bilder*/
+    border: 2px solid; color:rgb(37, 98, 48); /*kant på bilder*/
     /*gäller alla bilder*/
 }
 
@@ -24,7 +24,7 @@ body{
 header, footer{
     display: flex; /*header och footer följer med i hur man förminskar/förstorar webbläsaren*/
     justify-content: space-between; /*sätter space mellan text*/
-    background-color: rgb(67, 106, 74); /*bakgrundsfärg*/
+    background-color: rgb(37, 98, 48); /*bakgrundsfärg*/
 
     padding-left: 50px; /*space till texten/storleken av blocket*/
     padding-right: 50px;
@@ -71,13 +71,13 @@ p{ /*styling av paragraph*/
     margin-left: auto;
     margin-right: auto;
     margin-top: 6px;
-    color: rgb(67, 106, 74);
+    color: #256230;
     font-size: 24px;
     font-family: 'Times New Roman', Times, serif
 }
 
 .text-box{ /*styling av ramen som recepten ligger i*/
-    border: 2px solid #436a4a; /*skapar kant, storlek, färg*/
+    border: 2px solid #256230; /*skapar kant, storlek, färg*/
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -98,7 +98,7 @@ h3{ /*styling av h3*/
 
 h2{/*styling av h2*/
     max-width: 90%;
-    color: #436a4a;
+    color: #256230;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2px;
@@ -111,11 +111,11 @@ h4{/*styling av h4*/
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    color: #702e2ec9
+    color: #702e2ef0
 }
 a{/*styling av a-tags/länkar*/
     text-decoration: none; /*tar bort streck under tags*/
-    color: rgb(67, 106, 74)
+    color: rgb(37, 98, 48)
 }
 
 button{/*knappar som genererar recept*/
@@ -127,7 +127,7 @@ button{/*knappar som genererar recept*/
     margin-top: 20px;
     margin-left: 5%;
     padding: 8px; /*skapar luft inuti blocken text till kant*/
-    background-color: #436a4a; /*bakgrundsfärg*/
+    background-color: #256230; /*bakgrundsfärg*/
     color: white; /*text-färg*/
 }
 
@@ -136,6 +136,6 @@ button{/*knappar som genererar recept*/
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 6px;
-    color: #436a4a;
+    color: #256230;
     font-family: 'Times New Roman', Times, serif;
 }
