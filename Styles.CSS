@@ -23,7 +23,9 @@ body{
 
 header, footer{
     display: flex; /*header och footer följer med i hur man förminskar/förstorar webbläsaren*/
-    justify-content: space-between; /*sätter space mellan text*/
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     background-color: rgb(37, 98, 48); /*bakgrundsfärg*/
 
     padding-left: 50px; /*space till texten/storleken av blocket*/
@@ -49,12 +51,12 @@ nav a{ /*styling av länkar till höger i header/footer*/
     font-family: Arial, Helvetica, sans-serif; /*typsnitt*/
     color: rgb(255, 255, 255); /*färg*/
     text-decoration: none; /*tar bort linje under länkar*/
-
 }
 
 .meny{
     display: flex; 
-    gap: 30px; /*space mellan a-tags i header/footer*/
+    align-items: center;
+    gap: 10px; /*space mellan a-tags i header/footer*/
 }
 
 h1{ /*styling av h1*/
@@ -62,8 +64,9 @@ h1{ /*styling av h1*/
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 6px;
-    color: #436a4a;
+    color: #256230;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
 }
 
 p{ /*styling av paragraph*/
@@ -92,6 +95,7 @@ h3{ /*styling av h3*/
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0; /*minskar avståndet till underliggande text*/
+    font-size: 18px;
     font-family: 'Times New Roman', Times, serif
 }
 
@@ -103,6 +107,7 @@ h2{/*styling av h2*/
     margin-right: auto;
     margin-bottom: 2px;
     text-decoration: none;
+    font-size: 24px;
     font-family: cursive; /*kursivt typsnitt*/
 }
 
@@ -111,10 +116,12 @@ h4{/*styling av h4*/
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
+    font-size: 18px;
     color: #702e2ef0
 }
 a{/*styling av a-tags/länkar*/
     text-decoration: none; /*tar bort streck under tags*/
+    font-size: 24px;
     color: rgb(37, 98, 48)
 }
 
@@ -137,5 +144,6 @@ button{/*knappar som genererar recept*/
     margin-right: auto;
     margin-bottom: 6px;
     color: #256230;
+    font-size: 24px;
     font-family: 'Times New Roman', Times, serif;
 }
